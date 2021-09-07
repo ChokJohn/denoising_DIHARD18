@@ -175,9 +175,9 @@ def main():
 
     # Determine files to perform VAD on.
     if args.scpf is not None:
-        wav_files = utils.load_script_file(args.scpf, '.wav')
+        wav_files = utils.load_script_file(args.scpf, '.flac')
     else:
-        wav_files = utils.listdir(args.wav_dir, ext='.wav')
+        wav_files = utils.listdir(args.wav_dir, ext='.flac')
 
     # Determine output directory for VAD.
     if args.output_dir is None and args.wav_dir is not None:
